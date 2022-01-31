@@ -260,6 +260,18 @@ a .navbar-logo{
     margin: 0;
 }
 
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
 .product-card{
     width: 250px;
     margin: 0 10px;
