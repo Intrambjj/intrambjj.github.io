@@ -24,6 +24,11 @@ nav{
     border-bottom: 1px solid #383838;
 }
 
+a .navbar-logo{
+    width: 75px;
+    height: 79px;
+}
+
 .navbar-content{
     display: flex;
     align-items: center;
