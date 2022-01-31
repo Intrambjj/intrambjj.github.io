@@ -15,6 +15,11 @@ nav{
 
 }
 
+a .navbar-logo{
+    width: 75px;
+    height: 79px;
+}
+
 .navbar{
     display: flex;
     width: 100%;
