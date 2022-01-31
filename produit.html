@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Produit</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" /> 
+       <link rel="stylesheet" href="css/product.css">
+   </head> 
+   <body>
+        <nav>
+        <div class="navbar">
+            <img src="image/logo.png" class="navbar-logo" alt="logo">
+            <div class="navbar-content">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-box"/>
+                    <button href="#" class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-wallet"></i></a> 
+            </div>
+        </div>
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">Veste de Ski</a></li>
+            <li class="link-item"><a href="#" class="link">Pantalon de Ski</a></li>
+            <li class="link-item"><a href="#" class="link">Accessoire</a></li>
+            <li class="link-item"><a href="#" class="link">A propos</a></li>
+            <li class="link-item"><a href="#" class="link">Détails techniques</a></li>
+        </ul>
+        
+        </nav>
+
+       <section class="product-details">
+           <div class="image-slider">
+               <div class="product-images">
+                <img src="image/image20.png" alt="produit">
+                <img src="image/image21.png" alt="produit">
+                <img src="image/image22.png" alt="produit">
+                <img src="image/image23.png" alt="produit">
+               </div>
+           </div>
+           <div class="details">
+              <h2 class="product-brand">The north face</h2>
+              <p class="product-short-des">dragline</p>
+              <div class="product-des">
+                  <span class="product-price">$200</span>
+                  <span class="product-actual-price">$400</span>
+                  <span class="product-discount">( 50% off )</span>
+              </div>
+              <p class="product-sub-heading">select size</p>
+              <div class="select-taille">
+                <input type="radio" name="size" value="s" hidden id="s-size">
+                <label for="s-size" class="size-radio-btn">s</label>
+                <input type="radio" name="size" value="m" hidden id="m-size">
+                <label for="m-size" class="size-radio-btn">m</label>
+                <input type="radio" name="size" value="l" hidden id="l-size">
+                <label for="l-size" class="size-radio-btn">l</label>
+                <input type="radio" name="size" value="xl" hidden id="xl-size">
+                <label for="xl-size" class="size-radio-btn">xl</label>
+                <input type="radio" name="size" value="xxl" hidden id="xxl-size">
+                <label for="xxl-size" class="size-radio-btn">xxl</label> 
+              </div>
+              <form action="cart.html">
+                <button class="btn cart-btn">ajouter au panier</button>
+              </form>
+              
+           </div>
+       </section>
+
+       <section class="detail-des">
+           <h2 class="heading">description</h2>
+           <p class="des">Abordez cet hiver avec un équipement de neige qui passe sans problème des pistes au bar. La veste Dragline est imperméable, coupe-vent et respirante grâce à la technologie DryVent™ triple épaisseur. De plus, elle est conçue à partir de matériaux recyclés ou d'origine biologique, ce qui en fait un choix plus doux pour la nature, votre terrain de jeu préféré. Elle est pourvue d'une capuche spacieuse compatible avec un casque, d'aérations sous les bras et d'une jupe pare-neige pour vos rides dans la poudreuse.</p>
+       </section>
+
+       <!-- card-container -->
+       <section class="product">
+        <h2 class="product-category">Les promotions</h2>
+        <button class="pre-btn"><i class="fas fa-arrow-left"></i></button>
+        <button class="nxt-btn"><i class="fas fa-arrow-right"></i></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% réduction </span>
+                    <img src="image/image1.png" class="product-thumb" alt="image 1">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">petite description...</p>
+                    <span class="price">20$</span><span class="actual-price">40$</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% réduction </span>
+                    <img src="image/image2.png" class="product-thumb" alt="image 3">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">petite description...</p>
+                    <span class="price">20$</span><span class="actual-price">40$</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% réduction </span>
+                    <img src="image/image3.png" class="product-thumb" alt="image 3">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">petite description...</p>
+                    <span class="price">20$</span><span class="actual-price">40$</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% réduction </span>
+                    <img src="image/image4.png" class="product-thumb" alt="image 4">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">petite description...</p>
+                    <span class="price">20$</span><span class="actual-price">40$</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% réduction </span>
+                    <img src="image/image6.jpg" class="product-thumb" alt="image 6">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">petite description...</p>
+                    <span class="price">20$</span><span class="actual-price">40$</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% réduction </span>
+                    <img src="image/image7.jpg" class="product-thumb" alt="image 7">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">petite description...</p>
+                    <span class="price">20$</span><span class="actual-price">40$</span>
+                </div>
+            </div>
+        </div>
+       </section>
+
+        <footer>
+        <div class="footer-content">
+            <a href="#"><img src="image/logo.png" class="logo" alt="logo"></a>
+            <div class="footer-pres">
+                <p class="footer-title">FreezeFit</p>
+                <p class="info">FreezeFit est un nouveau site proposant des articles de ski. Nous vous proposons d'en apprendre plus sur nous en visitant notre page <a href="#">à propos</a>.<br>Vous pouvez aussi découvrir nos remarques et difficultés rencontrées lors de la création de ce site avec notre page <a href="#">détails techniques</a>.</p>
+            </div>
+        </div>
+        <p class="contact"><a href="mailto:martinpecquet@gmail.com" class="contact">support emails</a> - martin.pecquet@etu.univ-lyon1.fr / ilyass.berradi@etu.univ-lyon1.fr</p>
+        <p class="contact">telephone - 06 77 36 XX 20 35 / 06 89 20 XX 29 62</p>
+        <div class="footer-social-container">
+            <div class="social-content">
+                <a href="#" class="social-link">Terms & Services</a>
+                <a href="#" class="social-link">Pricacy page</a>
+            </div>
+            <div class="social-content">
+                <a href="#" class="social-link">Github</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+            </div>
+        </div>
+        <p class="footer-credit">FreezeFit, boutique de vêtement de ski </p>
+        </footer>
+   </body>
+</html>

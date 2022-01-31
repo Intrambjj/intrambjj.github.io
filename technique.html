@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/technique.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Détails techniques</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img src="image/logo.png" class="navbar-logo" alt="logo">
+            <div class="navbar-content">
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-box"/>
+                    <button href="recherche.html" class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <a href="cart.html"><i class="fas fa-user"></i></a>
+                <a href="cart.html"><i class="fas fa-wallet"></i></a> 
+            </div>
+        </div>
+        <ul class="links-container">
+            <li class="link-item"><a href="recherche.html" class="link">Veste de Ski</a></li>
+            <li class="link-item"><a href="recherche.html" class="link">Pantalon de Ski</a></li>
+            <li class="link-item"><a href="recherche.html" class="link">Accessoire</a></li>
+            <li class="link-item"><a href="information.html" class="link">A propos</a></li>
+            <li class="link-item"><a href="technique.html" class="link">Détails techniques</a></li>
+        </ul>
+        
+    </nav>
+
+    <section class="tech-container">
+        <h2>Journal de bord</h2>  
+        <h3>Voici une trace écrite de nos remarques ou  difficultés rencontrées ou pendant la réalisation de notre site.</h3> 
+        <ul>
+            <li class="tech-items">au commencement, j'ai eu du mal à positionner les éléments la ou je le souhaitais et à les dimentionner également. le résultat attendu n'était jamais ce que je désirais. j'avais oublié le fait que les éléments ont des valeurs par défaut pour le padding et margin, et donc forcément cela modifiait le rendu. j'ai donc au départ mis à 0 le marging et padding pour tout mes éléments. 
+            </li>
+            <li class="tech-items">J'ai eu du mal à rendre ma section nav fixe, afin qu'elle soit toujours présente même quand je déroule ma page. je mettais pourtant la position sur "sticky" mais ce n'était pas suffisant.  il fallait en fait précisé la position de mon bloc nav avec top:0 left:0.</li>
+            <li class="tech-items">pour mes icones "loupe", "user" et "portefeuille", j'ai eu du mal à trouver comment faire. je cherchais un type de bouton que je pouvais modifier avec une image mais je n'ai pas réussi. j'ai finalement trouvé la solution des icones du site font awesome avec les class fa fa. </li>
+            <li class="tech-items">J'ai eu du mal a dimentionner le background de mon héro. j'essayais plein de valeur pour lui faire prendre tous l'espace restant en dessous de mon bloc nav. puis j'ai découvert la solution  calc(100vh - 100px). 100px qui correspond à la hauteur de mon bloc nav.</li>
+            <li class="tech-items">Pour les photos de la page principale et la page de résultat, elles ne prenaient pas la dimention que je souhatais. même avec la valeur width=100% elles ne s'étiraient pas sur tout l'espace disponible dans le bloc. j'ai trouvé la solution object-fit:cover et j'ai obtenu le résultat attendu. 
+            </li>
+            <li class="tech-items">pour les produits promotions je n'arrivais pas à mettre le scroll et que les images sortent du bloc parent. j'ai trouvé la commande flex: 0 0 auto qui combine les propriétés flex-grow, flex-shrink et flex-basis.
+            </li>
+            <li class="tech-items">j'ai principalement utilisé le display:flex pour le positionnement de mes éléments. j'utilise parfois aussi le position absolute et relative quand je dois placer un élément qui à une position différente des autres éléments du blocs. la propriété display grid était le plus adapté selon moi pour la section "collection" et pour la page de recherche.  
+            </li>
+            <li class="tech-items">Pour la page d'accueil, j'ai volontairement mis la partie promotions en hidden, car je voulais ensuite pouvoir mettre des boutons qui fonctionneraient avec JavaScript pour faire défiler les produits.   
+            </li>
+            <li class="tech-items">Mon background image dans la page de produit se cachait derrière le bloc d’information de produit et donc j’ai enlevé la position:relative de la classe image-slider, après j’ai diminué le left de 50% à 27% et le width de 90% à 30% pour centrer les images du produit à l’intérieur du background image. 
+            </li>
+            <li class="tech-items">Quand j’ajoute le hover zoom in aux produits de promotions le haut et  le bas du produit n’apparaissent plus après que l’image s’agrandit, donc j’ai fait augmenter le padding-top et padding bottom à 70px pour la classe product-container. Mais après il y avait un peu trop d’espace entre le mot « Promotions » et les produits, donc j’ai mis margin:0 dans la class « product-category ».
+            </li>
+            <li class="tech-items">Quand j’ai augmenté le padding de la classe product-container la description du produit s’est caché derrière la photo du produit, donc j’ai donné une valeur de 50 px au margin-top. Mais après les images de la classe « image-slider » sont sorties du cadre de l’image background produit, donc j’ai changé le bottom de la classe « product-images » de 20px à 130px.
+            </li>
+            <li class="tech-items">Quand je voulais rendre la page responsive dans la page produit j’ai diminué le width et le height des boutons de taille pour qu’ils soient tous dans une seule ligne, mais après les lettres à l’intérieur du bouton se sont décalées en bas, donc j’ai fais diminuer le line-height de 80px à 70px.
+            </li>
+           
+            
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#"><img src="image/logo.png" class="logo" alt="logo"></a>
+            <div class="footer-pres">
+                <p class="footer-title">FreezeFit</p>
+                <p class="info">FreezeFit est un nouveau site proposant des articles de ski. Nous vous proposons d'en apprendre plus sur nous en visitant notre page <a href="information.html">à propos</a>.<br>Vous pouvez aussi découvrir nos remarques et difficultés rencontrées lors de la création de ce site avec notre page <a href="technique.html">détails techniques</a>.</p>
+            </div>
+        </div>
+        <p class="contact"><a href="mailto:martinpecquet@gmail.com" class="contact">support emails</a> - martin.pecquet@etu.univ-lyon1.fr / ilyass.berradi@etu.univ-lyon1.fr</p>
+        <p class="contact">telephone - 06 77 36 XX 20 35 / 06 89 20 XX 29 62</p>
+        <div class="footer-social-container">
+            <div class="social-content">
+                <a href="#" class="social-link">Terms & Services</a>
+                <a href="#" class="social-link">Pricacy page</a>
+            </div>
+            <div class="social-content">
+                <a href="#" class="social-link">Github</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+            </div>
+        </div>
+        <p class="footer-credit">FreezeFit, boutique de vêtement de ski </p>
+    </footer>
+</body>
+</html>

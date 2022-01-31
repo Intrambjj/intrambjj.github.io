@@ -1,0 +1,20 @@
+
+
+je n'arrivais pas à mettre le scroll sur mes produits en promotions... j'ai réussi avec la commande flex : 0 0 auto
+
+Journal de bord : Voici une trace écrite de nos difficultéés rencontrées pendant la réalisation de notre site. 
+
+- au commencement, j'ai eu du mal à positionner les éléments la ou je le souhaitais et à les dimentionner également. le résultat attendu n'était jamais ce que je désirais. j'avais oublié le fait que les éléments ont des valeurs par défaut pour le padding et margin, et donc forcément cela modifiait le rendu. j'ai donc au départ mis à 0 le marging et padding pour tout mes éléments. 
+
+- J'ai eu du mal à rendre ma section nav fixe, afin qu'elle soit toujours présente même quand je déroule ma page. je mettais pourtant la position sur "sticky" mais ce n'était pas suffisant.  il fallait en fait précisé la position de mon bloc nav avec top:0 left:0.
+
+- pour mes icones "loupe", "user" et "portefeuille", j'ai eu du mal à trouver comment faire. je cherchais un type de bouton que je pouvais modifier avec une image mais je n'ai pas réussi. j'ai finalement trouvé la solution des icones du site font awesome avec les class fa fa. 
+
+-J'ai eu du mal a dimentionner le background de mon héro. j'essayais plein de valeur pour lui faire prendre tous l'espace restant en dessous de mon bloc nav. puis j'ai découvert la solution  calc(100vh - 100px). 100px qui correspond à la hauteur de mon bloc nav.
+
+-Pour les photos de la page principale et la page de résultat, elles ne prenaient pas la dimention que je souhatais. même avec la valeur width=100% elles ne s'étiraient pas sur tout l'espace disponible dans le bloc. j'ai trouvé la solution object-fit:cover et j'ai obtenu le résultat attendu. 
+
+- pour les produits promotions je n'arrivais pas à mettre le scroll et que les images sortent du bloc parent. j'ai trouvé la commande flex: 0 0 auto qui combine les propriétés flex-grow, flex-shrink et flex-basis.
+
+- j'ai principalement utilisé le display:flex pour le positionnement de mes éléments. j'utilise parfois aussi le position absolute et relative quand je dois placer un élément qui à une position différente des autres éléments du blocs. la propriété display grid était le plus adapté selon moi pour la section "collection" et pour la page de recherche.  
+
