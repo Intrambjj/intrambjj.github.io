@@ -15,10 +15,7 @@ nav{
 
 }
 
-a .navbar-logo{
-    width: 75px;
-    height: 79px;
-}
+
 
 .navbar{
     display: flex;
@@ -27,6 +24,11 @@ a .navbar-logo{
     justify-content: space-between;
     padding: 10px 10px;
     border-bottom: 1px solid #383838;
+}
+
+a .navbar-logo{
+    width: 75px;
+    height: 79px;
 }
 
 .navbar-content{
